@@ -40,7 +40,7 @@ class RegUserModel{
     }
 
     async getStatus(){
-        const res = await client.query('select namesystem, versionls, developer, email from status;');
+        const res = await client.query('select namesystem, version, developer, email from status;');
         console.log(res);
         return res.rows;
     }
